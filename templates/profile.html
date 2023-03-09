@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Phone Book</title>
+	<style>
+		.navbar {
+			background-color: #fff;
+			padding: 1rem;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.navbar-brand {
+			font-size: 2rem;
+			font-weight: bold;
+			color: #333;
+		}
+		.navbar-nav {
+			margin-left: auto;
+		}
+		.nav-link {
+			color: #333;
+			font-weight: bold;
+			margin-right: 1rem;
+		}
+		.nav-link:hover {
+			color: #007bff;
+		}
+		.container {
+			margin-top: 3rem;
+		}
+		h1 {
+			font-size: 3rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-size: 1.5rem;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<a class="navbar-brand" href="{{ url_for('add_phonenumber') }}">Add Contact</a>
+		<div class="navbar-nav">
+			<a class="nav-link" href="{{ url_for('view') }}">View Contacts</a>
+			<a class="nav-link" href="{{ url_for('update') }}">Update Contact</a>
+			<a class="nav-link" href="{{ url_for('delete') }}">Delete Contact</a>
+			<a class="nav-link" href="{{ url_for('logout') }}">Sign Out</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<h1 class="text-center">Welcome to Phone Book</h1>
+				<p class="text-center">This is your personal phone book. You can manage your contacts here.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Phone Book</title>-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="style.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--        <a class="navbar-brand" href="#">Phone Book</a>-->
+<!--        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--	     <span class="navbar-toggler-icon"></span>-->
+<!--	 </button>-->
+<!--         <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--             <ul class="navbar-nav ml-auto">-->
+<!--	         <li class="nav-item">-->
+<!--                     <a class="nav-link" href="{{ url_for('view') }}">View Contacts</a>-->
+<!--		</li>-->
+<!--		<li class="nav-item">-->
+<!--		    <a class="nav-link" href="{{ url_for('update') }}">Update Contact</a>-->
+<!--		</li>-->
+<!--		<li class="nav-item">-->
+<!--		    <a class="nav-link" href="{{ url_for('delete') }}"> Delete Contact</a>-->
+<!--		</li>-->
+<!--		<li class="nav-item">-->
+<!--		    <a class="nav-link" href="{{ url_for('logout') }}">Sign Out</a>-->
+<!--		</li>-->
+<!--	    </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 offset-md-2">-->
+<!--                <h1 class="text-center">Welcome to Phone Book</h1>-->
+<!--                <p class="text-center">This is your personal phone book. You can manage your contacts here.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>&ndash;&gt;-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<!--</body>-->
+<!--</html>-->
